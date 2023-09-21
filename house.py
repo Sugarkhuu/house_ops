@@ -37,7 +37,7 @@ for i in range(len(listing[:10])):
     print(desc,price)
     price_list.append([desc,price])
 
-df = pd.DataFrame(price_list, columns = ["Тайлбар","Үнэ"])
+df = pd.DataFrame(price_list, columns = ["text_ad","price"])
 
 df.to_csv("results/unegui.csv",index=False,encoding = "utf-8-sig")
 
