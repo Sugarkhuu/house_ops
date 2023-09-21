@@ -1,3 +1,7 @@
+# put new data into test database
+# do code and data testing
+# put test database into production
+
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -36,3 +40,5 @@ for i in range(len(listing[:10])):
 df = pd.DataFrame(price_list, columns = ["Тайлбар","Үнэ"])
 
 df.to_csv("results/unegui.csv",index=False,encoding = "utf-8-sig")
+
+
