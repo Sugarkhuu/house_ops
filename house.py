@@ -31,7 +31,7 @@ listing = driver.find_elements(By.XPATH,"//*[@id='listing']/section/div[2]/div[1
 
 price_list = []
 
-for i in range(len(listing[:10])):
+for i in range(len(listing[:15])):
     desc = listing[i].find_element(By.XPATH,"div[1]/div[2]/div/a").text
     price = listing[i].find_element(By.XPATH,"div[1]/div[3]/div").text
     print(desc,price)
