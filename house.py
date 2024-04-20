@@ -27,13 +27,14 @@ driver.find_element(By.XPATH, "//*[@id='trait_fields']/div[2]/div[2]/div[2]").cl
 driver.find_element(By.PARTIAL_LINK_TEXT,"2 өрөө").click()
 
 
-listing = driver.find_elements(By.XPATH,"//*[@id='listing']/section/div[2]/div[1]/div[2]/ul/li")
+listing = driver.find_elements(By.XPATH,"/html/body/div[2]/div[3]/section/div[2]/div[1]/div[2]/div[2]/div[2]/div")
 
 price_list = []
 
 for i in range(len(listing[:15])):
-    desc = listing[i].find_element(By.XPATH,"div[1]/div[2]/div/a").text
-    price = listing[i].find_element(By.XPATH,"div[1]/div[3]/div").text
+    print(f"Ad number: {i+1}")
+    desc = listing[i].find_element(By.XPATH,"div[2]/div[1]").text
+    price = listing[i].find_element(By.XPATH,"div[2]/div[1]/div").text
     print(desc,price)
     price_list.append([desc,price])
 
