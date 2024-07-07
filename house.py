@@ -27,7 +27,7 @@ driver.find_element(By.XPATH, "//*[@id='trait_fields']/div[2]/div[2]/div[2]").cl
 driver.find_element(By.PARTIAL_LINK_TEXT,"2 өрөө").click()
 
 
-listing = driver.find_elements(By.XPATH,"/html/body/div[2]/div[3]/section/div[2]/div[1]/div[2]/div[2]/div[2]/div")
+listing = driver.find_elements(By.XPATH,"/html/body/div[2]/div[3]/section/div[2]/div[1]/div[2]/div[2]/div")
 
 price_list = []
 
