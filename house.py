@@ -18,7 +18,7 @@ chrome_options = Options()
 chrome_options.add_argument("--headless")
 
 # open chrome, name the object as driver
-driver = webdriver.Chrome(chrome_options=chrome_options)
+driver = webdriver.Chrome(options=chrome_options)
 
 driver.get("https://www.unegui.mn/l-hdlh/l-hdlh-zarna/oron-suuts-zarna/")
 driver.find_element(By.XPATH, "//*[@id='trait_fields']/div[2]/div[2]/div[2]").click()
