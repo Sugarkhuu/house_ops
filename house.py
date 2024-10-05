@@ -1,4 +1,4 @@
-# put new data into test database
+# put new data into test database.
 # do code and data testing
 # put test database into production
 
