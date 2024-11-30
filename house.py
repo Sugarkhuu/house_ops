@@ -32,7 +32,7 @@ listing = driver.find_elements(By.XPATH,"/html/body/div[2]/div[3]/section/div[2]
 
 price_list = []
 
-for i in range(len(listing[:15])):
+for i in range(len(listing[:5])):
     print(f"Ad number: {i+1}")
     desc = listing[i].find_element(By.XPATH,"div[2]/div[1]").text
     price = listing[i].find_element(By.XPATH,"div[2]/div[1]/div").text
