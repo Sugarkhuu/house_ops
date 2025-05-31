@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 
 
 df = pd.read_csv("results/unegui.csv")
-engine = create_engine('postgresql://chimka:chimka@localhost:5432/housing')
+engine = create_engine('postgresql://postgres:postgres@localhost:5432/housing')
 table_name = 'housenew'
 
 # Using the direct psycopg2 connection
